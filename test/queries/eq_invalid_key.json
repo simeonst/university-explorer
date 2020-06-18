@@ -1,0 +1,18 @@
+{
+    "title": "EQ on invalid key",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_instructor": "holmes, reid"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

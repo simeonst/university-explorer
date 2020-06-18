@@ -1,0 +1,6 @@
+{
+    "title": "Invalid query (not an object)",
+    "query": ["BIIRD"],
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Querying with exponent notation",
+    "query":
+    {
+        "WHERE": {
+            "AND": [
+                {"IS": {
+                    "cpsc_dept": "cpsc"
+                }
+                },
+                {
+                    "LT": {
+                        "cpsc_fail": 2e2
+                    }
+                },
+                {
+                    "GT":{
+                        "cpsc_pass": 1e1
+                    }
+                },
+                {
+                    "GT": {
+                        "cpsc_audit": 0.02e2
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "cpsc_dept",
+                "cpsc_id"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"cpsc_dept":"cpsc","cpsc_id":"110"},{"cpsc_dept":"cpsc","cpsc_id":"110"},{"cpsc_dept":"cpsc","cpsc_id":"340"},{"cpsc_dept":"cpsc","cpsc_id":"340"},{"cpsc_dept":"cpsc","cpsc_id":"340"},{"cpsc_dept":"cpsc","cpsc_id":"340"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"540"},{"cpsc_dept":"cpsc","cpsc_id":"547"},{"cpsc_dept":"cpsc","cpsc_id":"547"}]
+}

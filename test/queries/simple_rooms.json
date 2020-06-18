@@ -1,0 +1,397 @@
+{
+    "title": "SELECT FROM rooms WHERE seats > 50",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name"
+            ],
+            "ORDER": "rooms_name"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_name": "AERL_120"
+        },
+        {
+            "rooms_name": "ALRD_105"
+        },
+        {
+            "rooms_name": "ANGU_037"
+        },
+        {
+            "rooms_name": "ANGU_039"
+        },
+        {
+            "rooms_name": "ANGU_098"
+        },
+        {
+            "rooms_name": "ANGU_234"
+        },
+        {
+            "rooms_name": "ANGU_241"
+        },
+        {
+            "rooms_name": "ANGU_243"
+        },
+        {
+            "rooms_name": "ANGU_254"
+        },
+        {
+            "rooms_name": "ANGU_291"
+        },
+        {
+            "rooms_name": "ANGU_295"
+        },
+        {
+            "rooms_name": "ANGU_334"
+        },
+        {
+            "rooms_name": "ANGU_343"
+        },
+        {
+            "rooms_name": "ANGU_345"
+        },
+        {
+            "rooms_name": "ANGU_347"
+        },
+        {
+            "rooms_name": "ANGU_350"
+        },
+        {
+            "rooms_name": "ANGU_435"
+        },
+        {
+            "rooms_name": "ANSO_207"
+        },
+        {
+            "rooms_name": "BIOL_2000"
+        },
+        {
+            "rooms_name": "BIOL_2200"
+        },
+        {
+            "rooms_name": "BRKX_2365"
+        },
+        {
+            "rooms_name": "BUCH_A101"
+        },
+        {
+            "rooms_name": "BUCH_A102"
+        },
+        {
+            "rooms_name": "BUCH_A103"
+        },
+        {
+            "rooms_name": "BUCH_A104"
+        },
+        {
+            "rooms_name": "BUCH_A201"
+        },
+        {
+            "rooms_name": "BUCH_A202"
+        },
+        {
+            "rooms_name": "BUCH_A203"
+        },
+        {
+            "rooms_name": "BUCH_B208"
+        },
+        {
+            "rooms_name": "BUCH_B213"
+        },
+        {
+            "rooms_name": "BUCH_B215"
+        },
+        {
+            "rooms_name": "BUCH_B313"
+        },
+        {
+            "rooms_name": "BUCH_B315"
+        },
+        {
+            "rooms_name": "BUCH_D217"
+        },
+        {
+            "rooms_name": "BUCH_D218"
+        },
+        {
+            "rooms_name": "BUCH_D219"
+        },
+        {
+            "rooms_name": "BUCH_D222"
+        },
+        {
+            "rooms_name": "CEME_1202"
+        },
+        {
+            "rooms_name": "CEME_1204"
+        },
+        {
+            "rooms_name": "CHBE_101"
+        },
+        {
+            "rooms_name": "CHBE_102"
+        },
+        {
+            "rooms_name": "CHBE_103"
+        },
+        {
+            "rooms_name": "CHEM_B150"
+        },
+        {
+            "rooms_name": "CHEM_B250"
+        },
+        {
+            "rooms_name": "CHEM_C124"
+        },
+        {
+            "rooms_name": "CHEM_C126"
+        },
+        {
+            "rooms_name": "CHEM_D200"
+        },
+        {
+            "rooms_name": "CHEM_D300"
+        },
+        {
+            "rooms_name": "CIRS_1250"
+        },
+        {
+            "rooms_name": "DMP_110"
+        },
+        {
+            "rooms_name": "DMP_301"
+        },
+        {
+            "rooms_name": "DMP_310"
+        },
+        {
+            "rooms_name": "ESB_1012"
+        },
+        {
+            "rooms_name": "ESB_1013"
+        },
+        {
+            "rooms_name": "ESB_2012"
+        },
+        {
+            "rooms_name": "FNH_40"
+        },
+        {
+            "rooms_name": "FNH_60"
+        },
+        {
+            "rooms_name": "FORW_303"
+        },
+        {
+            "rooms_name": "FRDM_153"
+        },
+        {
+            "rooms_name": "FSC_1001"
+        },
+        {
+            "rooms_name": "FSC_1003"
+        },
+        {
+            "rooms_name": "FSC_1005"
+        },
+        {
+            "rooms_name": "FSC_1221"
+        },
+        {
+            "rooms_name": "GEOG_100"
+        },
+        {
+            "rooms_name": "GEOG_101"
+        },
+        {
+            "rooms_name": "GEOG_147"
+        },
+        {
+            "rooms_name": "GEOG_200"
+        },
+        {
+            "rooms_name": "GEOG_212"
+        },
+        {
+            "rooms_name": "HEBB_10"
+        },
+        {
+            "rooms_name": "HEBB_100"
+        },
+        {
+            "rooms_name": "HEBB_12"
+        },
+        {
+            "rooms_name": "HEBB_13"
+        },
+        {
+            "rooms_name": "HENN_200"
+        },
+        {
+            "rooms_name": "HENN_201"
+        },
+        {
+            "rooms_name": "HENN_202"
+        },
+        {
+            "rooms_name": "IBLC_182"
+        },
+        {
+            "rooms_name": "IBLC_261"
+        },
+        {
+            "rooms_name": "IONA_301"
+        },
+        {
+            "rooms_name": "LASR_102"
+        },
+        {
+            "rooms_name": "LASR_104"
+        },
+        {
+            "rooms_name": "LASR_105"
+        },
+        {
+            "rooms_name": "LASR_107"
+        },
+        {
+            "rooms_name": "LSC_1001"
+        },
+        {
+            "rooms_name": "LSC_1002"
+        },
+        {
+            "rooms_name": "LSC_1003"
+        },
+        {
+            "rooms_name": "LSK_200"
+        },
+        {
+            "rooms_name": "LSK_201"
+        },
+        {
+            "rooms_name": "LSK_460"
+        },
+        {
+            "rooms_name": "MATH_100"
+        },
+        {
+            "rooms_name": "MATH_102"
+        },
+        {
+            "rooms_name": "MATX_1100"
+        },
+        {
+            "rooms_name": "MCLD_202"
+        },
+        {
+            "rooms_name": "MCLD_214"
+        },
+        {
+            "rooms_name": "MCLD_228"
+        },
+        {
+            "rooms_name": "MCLD_242"
+        },
+        {
+            "rooms_name": "MCLD_254"
+        },
+        {
+            "rooms_name": "MCML_158"
+        },
+        {
+            "rooms_name": "MCML_160"
+        },
+        {
+            "rooms_name": "MCML_166"
+        },
+        {
+            "rooms_name": "ORCH_1001"
+        },
+        {
+            "rooms_name": "ORCH_3074"
+        },
+        {
+            "rooms_name": "ORCH_4074"
+        },
+        {
+            "rooms_name": "OSBO_A"
+        },
+        {
+            "rooms_name": "PHRM_1101"
+        },
+        {
+            "rooms_name": "PHRM_1201"
+        },
+        {
+            "rooms_name": "PHRM_3208"
+        },
+        {
+            "rooms_name": "SCRF_100"
+        },
+        {
+            "rooms_name": "SCRF_209"
+        },
+        {
+            "rooms_name": "SOWK_124"
+        },
+        {
+            "rooms_name": "SPPH_B151"
+        },
+        {
+            "rooms_name": "SRC_220A"
+        },
+        {
+            "rooms_name": "SRC_220B"
+        },
+        {
+            "rooms_name": "SRC_220C"
+        },
+        {
+            "rooms_name": "SWNG_121"
+        },
+        {
+            "rooms_name": "SWNG_122"
+        },
+        {
+            "rooms_name": "SWNG_221"
+        },
+        {
+            "rooms_name": "SWNG_222"
+        },
+        {
+            "rooms_name": "UCLL_103"
+        },
+        {
+            "rooms_name": "WESB_100"
+        },
+        {
+            "rooms_name": "WESB_201"
+        },
+        {
+            "rooms_name": "WOOD_1"
+        },
+        {
+            "rooms_name": "WOOD_2"
+        },
+        {
+            "rooms_name": "WOOD_3"
+        },
+        {
+            "rooms_name": "WOOD_4"
+        },
+        {
+            "rooms_name": "WOOD_5"
+        },
+        {
+            "rooms_name": "WOOD_6"
+        }
+    ]
+}

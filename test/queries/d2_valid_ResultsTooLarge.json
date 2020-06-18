@@ -1,0 +1,24 @@
+{
+    "title": "Results too large on Transformation query",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_instructor", "Count"],
+            "ORDER": {"dir": "DOWN", "keys": ["Count"]}
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "Count": {
+                        "COUNT": "courses_instructor"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+"result": "ResultTooLargeError"}

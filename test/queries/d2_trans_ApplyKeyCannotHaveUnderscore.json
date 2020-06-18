@@ -1,0 +1,27 @@
+{
+    "title": "Apply key cannot contain underscore",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 70
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "buddy_guy"    ]  },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "buddy_guy": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]  }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

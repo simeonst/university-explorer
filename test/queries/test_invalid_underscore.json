@@ -1,0 +1,9 @@
+{
+    "title": "Invalid Key (white space)",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {"COLUMNS":["__dept"]}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

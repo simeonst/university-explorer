@@ -1,0 +1,33 @@
+{
+    "title": "Invalid key courses_seats in GT",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_seats": 70
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg"    ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["courses_title"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

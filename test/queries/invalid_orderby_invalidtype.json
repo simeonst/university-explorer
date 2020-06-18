@@ -1,0 +1,14 @@
+{
+    "title": "ORDER is a number (invalid type)",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id", "courses_dept"
+            ],
+            "ORDER": 0
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

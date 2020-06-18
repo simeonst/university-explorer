@@ -1,0 +1,9 @@
+{
+    "title": "Query with COLUMNS as a number",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {"COLUMNS":  0}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

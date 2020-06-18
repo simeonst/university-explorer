@@ -1,0 +1,17 @@
+{
+    "title": "only first ID part in COLUMNS string in OPTIONS",
+    "query":{
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

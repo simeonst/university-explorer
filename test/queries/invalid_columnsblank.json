@@ -1,0 +1,9 @@
+{
+    "title": "Query with blank options column",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {"COLUMNS":  []}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

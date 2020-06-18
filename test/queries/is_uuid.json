@@ -1,0 +1,26 @@
+{
+    "title": "IS a UUID",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "46655"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cpsc","courses_id":"110","courses_avg":71.92,"courses_instructor":"","courses_title":"comptn, progrmng","courses_pass":66,"courses_fail":9,"courses_audit":0,"courses_uuid":"46655","courses_year":1900}]
+}

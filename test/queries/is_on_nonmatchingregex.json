@@ -1,0 +1,18 @@
+{
+    "title": "SCOMPARATOR on non-matching regexp (asterisk in the middle)",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "ho*mes, reid"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

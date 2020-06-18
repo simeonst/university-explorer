@@ -1,0 +1,34 @@
+{
+    "title": "SELECT courses_dept, courses_id WHERE courses_dept != \"CPSC\" && courses_id != \"110\",",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                        "NOT": {
+
+                        "IS": {
+                            "courses_dept": "cpsc"
+                        }
+                     }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_id": "110"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

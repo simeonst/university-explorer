@@ -1,0 +1,9 @@
+{
+    "title": "SELECT *",
+    "query": {
+        "WHERE": [],
+        "OPTIONS": {"COLUMNS":["cpsc_dept"]}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

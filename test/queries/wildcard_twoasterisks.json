@@ -1,0 +1,18 @@
+{
+    "title": "SELECT * WHERE instructor=*olmes* ORDER BY instructor",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "*olme*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"courses_instructor":"beley, lisa;harrison, nicholas;holmes, jonathan"},{"courses_instructor":"beley, lisa;harrison, nicholas;holmes, jonathan"},{"courses_instructor":"casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"},{"courses_instructor":"casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"},{"courses_instructor":"casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"},{"courses_instructor":"dooley, kent;frohlich, jiri;hauff, kristin;hill, john stuart;holmes, daniel;jung, benjamin;mattman, andre;monsalve, maria victoria;palaty, jan;pudek, morris;schreiber, william;tomalty, cheryl;tucker, tracy;vallance, hilary"},{"courses_instructor":"dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"},{"courses_instructor":"dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"},{"courses_instructor":"halstead, anne catherine;holmes, daniel;keown, paul anthony;li, dailin;martz, walter;mattman, andre;pudek, morris;purssell, roy"},{"courses_instructor":"halstead, anne catherine;holmes, daniel;keown, paul anthony;li, dailin;martz, walter;mattman, andre;pudek, morris;purssell, roy"},{"courses_instructor":"halstead, anne catherine;holmes, daniel;keown, paul anthony;li, dailin;martz, walter;mattman, andre;pudek, morris;purssell, roy"},{"courses_instructor":"holmes, daniel;jung, benjamin;keown, paul anthony;li, dailin;nislow, corey;pudek, morris;purssell, roy;xenakis, jennifer"},{"courses_instructor":"holmes, daniel;keown, paul anthony;li, dailin;martz, walter;mattman, andre;pudek, morris;purssell, roy"},{"courses_instructor":"holmes, daniel;keown, paul anthony;li, dailin;mattman, andre;pudek, morris;purssell, roy"},{"courses_instructor":"holmes, reid"},{"courses_instructor":"holmes, reid"},{"courses_instructor":"holmes, reid"},{"courses_instructor":"holmes, william"},{"courses_instructor":"holmes, william"}]
+}

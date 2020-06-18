@@ -1,0 +1,25 @@
+{
+    "title": "Apply rule must be an object",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 70
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg"    ]  },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+
+                null
+
+            ]  }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

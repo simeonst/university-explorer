@@ -1,0 +1,25 @@
+{
+    "title": "Apply key must be string",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 70
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg"    ]  },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+
+                }
+            ]  }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

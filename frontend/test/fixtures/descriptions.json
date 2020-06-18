@@ -1,0 +1,15 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "simple query with one condition in WHERE, and only COLUMNS selected",
+    "query3": "simple query with 2 conditions, using AND",
+    "query4": "simple query with 2 conditions, using OR",
+    "query5": "query with selected DIR but no sort columns",
+    "query6": "query with one ORDER columns and DIR UP",
+    "query7": "query with one ORDER columns and DIR DOWN",
+    "query8": "query with two ORDER columns and DIR DOWN",
+    "query9": "query with 3 conditions, using NONE of the following",
+    "query10": "query with 3 conditions, using NONE of the following and NOT in front of every cond",
+    "query11": "query with three TRANSFORMATIONS, a GROUP and ORDER",
+    "query12": "query with IS and input (id 310) is a string, not a number",
+    "query13": "query with multiple conditions with IS using strings and numbers as strings"
+}

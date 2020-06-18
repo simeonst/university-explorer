@@ -1,0 +1,27 @@
+{
+    "title": "INVALID (and with empty array)",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 85
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

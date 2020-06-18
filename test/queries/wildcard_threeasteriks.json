@@ -1,0 +1,18 @@
+{
+    "title": "Invalid (3 asteriks)",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "***"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

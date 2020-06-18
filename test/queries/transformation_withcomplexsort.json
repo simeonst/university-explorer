@@ -1,0 +1,485 @@
+{
+    "title": "Simple max transformation",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 10
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_shortname",
+                "rooms_furniture",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_fullname",
+                    "rooms_shortname",
+                    "maxSeats",
+                    "rooms_furniture"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_fullname",
+                "rooms_shortname",
+                "rooms_furniture"
+            ],
+            "APPLY": [
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_fullname": "Allard Hall (LAW)",
+            "rooms_shortname": "ALRD",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 20
+        },
+        {
+            "rooms_fullname": "Allard Hall (LAW)",
+            "rooms_shortname": "ALRD",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 94
+        },
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_shortname": "ANSO",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 26
+        },
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_shortname": "ANSO",
+            "rooms_furniture": "Classroom-Moveable Tables & Chairs",
+            "maxSeats": 37
+        },
+        {
+            "rooms_fullname": "Auditorium Annex",
+            "rooms_shortname": "AUDX",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 21
+        },
+        {
+            "rooms_fullname": "Biological Sciences",
+            "rooms_shortname": "BIOL",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 16
+        },
+        {
+            "rooms_fullname": "Biological Sciences",
+            "rooms_shortname": "BIOL",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 76
+        },
+        {
+            "rooms_fullname": "Brock Hall Annex",
+            "rooms_shortname": "BRKX",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 24
+        },
+        {
+            "rooms_fullname": "Brock Hall Annex",
+            "rooms_shortname": "BRKX",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 70
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "rooms_shortname": "BUCH",
+            "rooms_furniture": "Classroom-Moveable Tables & Chairs",
+            "maxSeats": 24
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "rooms_shortname": "BUCH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 42
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "rooms_shortname": "BUCH",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 78
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "rooms_shortname": "BUCH",
+            "rooms_furniture": "Classroom-Fixed Tables/Moveable Chairs",
+            "maxSeats": 78
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "rooms_shortname": "BUCH",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 108
+        },
+        {
+            "rooms_fullname": "Chemical and Biological Engineering Building",
+            "rooms_shortname": "CHBE",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 60
+        },
+        {
+            "rooms_fullname": "Chemical and Biological Engineering Building",
+            "rooms_shortname": "CHBE",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 200
+        },
+        {
+            "rooms_fullname": "Civil and Mechanical Engineering",
+            "rooms_shortname": "CEME",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 26
+        },
+        {
+            "rooms_fullname": "Civil and Mechanical Engineering",
+            "rooms_shortname": "CEME",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 62
+        },
+        {
+            "rooms_fullname": "Civil and Mechanical Engineering",
+            "rooms_shortname": "CEME",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 100
+        },
+        {
+            "rooms_fullname": "Earth Sciences Building",
+            "rooms_shortname": "ESB",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 80
+        },
+        {
+            "rooms_fullname": "Earth and Ocean Sciences - Main",
+            "rooms_shortname": "EOSM",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 50
+        },
+        {
+            "rooms_fullname": "Food, Nutrition and Health",
+            "rooms_shortname": "FNH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 28
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_shortname": "FSC",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 36
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_shortname": "FSC",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 65
+        },
+        {
+            "rooms_fullname": "Frank Forward",
+            "rooms_shortname": "FORW",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 44
+        },
+        {
+            "rooms_fullname": "Frank Forward",
+            "rooms_shortname": "FORW",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 63
+        },
+        {
+            "rooms_fullname": "Frederic Lasserre",
+            "rooms_shortname": "LASR",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 20
+        },
+        {
+            "rooms_fullname": "Frederic Lasserre",
+            "rooms_shortname": "LASR",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 80
+        },
+        {
+            "rooms_fullname": "Friedman Building",
+            "rooms_shortname": "FRDM",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 160
+        },
+        {
+            "rooms_fullname": "Geography",
+            "rooms_shortname": "GEOG",
+            "rooms_furniture": "Classroom-Moveable Tables & Chairs",
+            "maxSeats": 39
+        },
+        {
+            "rooms_fullname": "Geography",
+            "rooms_shortname": "GEOG",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 72
+        },
+        {
+            "rooms_fullname": "Geography",
+            "rooms_shortname": "GEOG",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 100
+        },
+        {
+            "rooms_fullname": "Hebb",
+            "rooms_shortname": "HEBB",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 54
+        },
+        {
+            "rooms_fullname": "Hebb",
+            "rooms_shortname": "HEBB",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 375
+        },
+        {
+            "rooms_fullname": "Hennings",
+            "rooms_shortname": "HENN",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 36
+        },
+        {
+            "rooms_fullname": "Henry Angus",
+            "rooms_shortname": "ANGU",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 80
+        },
+        {
+            "rooms_fullname": "Henry Angus",
+            "rooms_shortname": "ANGU",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 260
+        },
+        {
+            "rooms_fullname": "Hugh Dempster Pavilion",
+            "rooms_shortname": "DMP",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 40
+        },
+        {
+            "rooms_fullname": "Hugh Dempster Pavilion",
+            "rooms_shortname": "DMP",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 160
+        },
+        {
+            "rooms_fullname": "Iona Building",
+            "rooms_shortname": "IONA",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 50
+        },
+        {
+            "rooms_fullname": "Iona Building",
+            "rooms_shortname": "IONA",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 100
+        },
+        {
+            "rooms_fullname": "Irving K Barber Learning Centre",
+            "rooms_shortname": "IBLC",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 50
+        },
+        {
+            "rooms_fullname": "Irving K Barber Learning Centre",
+            "rooms_shortname": "IBLC",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 112
+        },
+        {
+            "rooms_fullname": "Irving K Barber Learning Centre",
+            "rooms_shortname": "IBLC",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 154
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_shortname": "SOWK",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 16
+        },
+        {
+            "rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+            "rooms_shortname": "LSK",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 75
+        },
+        {
+            "rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+            "rooms_shortname": "LSK",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 205
+        },
+        {
+            "rooms_fullname": "Life Sciences Centre",
+            "rooms_shortname": "LSC",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 350
+        },
+        {
+            "rooms_fullname": "MacLeod",
+            "rooms_shortname": "MCLD",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 84
+        },
+        {
+            "rooms_fullname": "MacLeod",
+            "rooms_shortname": "MCLD",
+            "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+            "maxSeats": 136
+        },
+        {
+            "rooms_fullname": "MacMillan",
+            "rooms_shortname": "MCML",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 47
+        },
+        {
+            "rooms_fullname": "MacMillan",
+            "rooms_shortname": "MCML",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 72
+        },
+        {
+            "rooms_fullname": "Mathematics",
+            "rooms_shortname": "MATH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 60
+        },
+        {
+            "rooms_fullname": "Neville Scarfe",
+            "rooms_shortname": "SCRF",
+            "rooms_furniture": "Classroom-Moveable Tables & Chairs",
+            "maxSeats": 40
+        },
+        {
+            "rooms_fullname": "Neville Scarfe",
+            "rooms_shortname": "SCRF",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 60
+        },
+        {
+            "rooms_fullname": "Orchard Commons",
+            "rooms_shortname": "ORCH",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 25
+        },
+        {
+            "rooms_fullname": "Orchard Commons",
+            "rooms_shortname": "ORCH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 72
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_shortname": "PHRM",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 72
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_shortname": "PHRM",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 236
+        },
+        {
+            "rooms_fullname": "Ponderosa Commons: Oak House",
+            "rooms_shortname": "PCOH",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 40
+        },
+        {
+            "rooms_fullname": "Ponderosa Commons: Oak House",
+            "rooms_shortname": "PCOH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 40
+        },
+        {
+            "rooms_fullname": "Robert F. Osborne Centre",
+            "rooms_shortname": "OSBO",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 442
+        },
+        {
+            "rooms_fullname": "School of Population and Public Health",
+            "rooms_shortname": "SPPH",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 16
+        },
+        {
+            "rooms_fullname": "School of Population and Public Health",
+            "rooms_shortname": "SPPH",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 66
+        },
+        {
+            "rooms_fullname": "Student Recreation Centre",
+            "rooms_shortname": "SRC",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 299
+        },
+        {
+            "rooms_fullname": "The Leon and Thea Koerner University Centre",
+            "rooms_shortname": "UCLL",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 48
+        },
+        {
+            "rooms_fullname": "The Leon and Thea Koerner University Centre",
+            "rooms_shortname": "UCLL",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 55
+        },
+        {
+            "rooms_fullname": "West Mall Swing Space",
+            "rooms_shortname": "SWNG",
+            "rooms_furniture": "Classroom-Moveable Tables & Chairs",
+            "maxSeats": 27
+        },
+        {
+            "rooms_fullname": "West Mall Swing Space",
+            "rooms_shortname": "SWNG",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 47
+        },
+        {
+            "rooms_fullname": "West Mall Swing Space",
+            "rooms_shortname": "SWNG",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 190
+        },
+        {
+            "rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+            "rooms_shortname": "WOOD",
+            "rooms_furniture": "Classroom-Movable Tables & Chairs",
+            "maxSeats": 30
+        },
+        {
+            "rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+            "rooms_shortname": "WOOD",
+            "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+            "maxSeats": 120
+        }
+    ]
+}

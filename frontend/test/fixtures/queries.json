@@ -1,0 +1,15 @@
+{
+    "query1":{"WHERE": {"IS": {"courses_dept": "cpsc"} }, "OPTIONS": {"COLUMNS": ["courses_dept", "courses_id"], "ORDER": "courses_id"} },
+    "query2":{"WHERE":{"GT":{"courses_avg":98}},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_title"]}},
+    "query3": {"WHERE":{"AND":[{"GT":{"courses_avg":98}},{"EQ":{"courses_audit":0}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_title"]}},
+    "query4": {"WHERE":{"OR":[{"GT":{"courses_avg":98}},{"LT":{"courses_audit":0}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_title"]}},
+    "query5": {"WHERE":{},"OPTIONS":{"COLUMNS":["courses_audit","courses_avg","courses_dept","courses_fail","courses_id","courses_instructor","courses_pass","courses_title","courses_uuid","courses_year"],"ORDER":{"dir":"DOWN","keys":[]}}},
+    "query6": {"WHERE":{"AND":[{"GT":{"courses_avg":85}},{"IS":{"courses_dept":"cpsc"}},{"LT":{"courses_audit":100}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_instructor"],"ORDER":{"dir":"UP","keys":["courses_avg"]}}},
+    "query7": {"WHERE":{"AND":[{"GT":{"courses_avg":85}},{"IS":{"courses_dept":"cpsc"}},{"LT":{"courses_audit":100}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_instructor"],"ORDER":{"dir":"DOWN","keys":["courses_avg"]}}},
+    "query8": {"WHERE":{"AND":[{"GT":{"courses_avg":85}},{"IS":{"courses_dept":"cpsc"}},{"LT":{"courses_audit":100}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_instructor"],"ORDER":{"dir":"DOWN","keys":["courses_avg","courses_dept"]}}},
+    "query9": {"WHERE":{"NOT":{"OR":[{"GT":{"courses_avg":85}},{"IS":{"courses_dept":"cpsc"}},{"LT":{"courses_audit":100}}]}},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_instructor"],"ORDER":{"dir":"DOWN","keys":["courses_avg","courses_dept"]}}},
+    "query10": {"WHERE":{"NOT":{"OR":[{"NOT":{"GT":{"courses_avg":85}}},{"NOT":{"IS":{"courses_dept":"cpsc"}}},{"NOT":{"LT":{"courses_audit":100}}}]}},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_instructor"],"ORDER":{"dir":"DOWN","keys":["courses_avg","courses_dept"]}}},
+    "query11": {"WHERE":{"GT":{"courses_year":2015}},"OPTIONS":{"COLUMNS":["courses_avg","courses_instructor","sumAudit","sumPass","avgFail"],"ORDER":{"dir":"DOWN","keys":["courses_avg","courses_instructor"]}},"TRANSFORMATIONS":{"GROUP":["courses_avg","courses_instructor"],"APPLY":[{"sumAudit":{"SUM":"courses_audit"}},{"sumPass":{"SUM":"courses_pass"}},{"avgFail":{"AVG":"courses_fail"}}]}},
+    "query12": {"WHERE":{"AND":[{"IS":{"courses_dept":"cpsc"}},{"GT":{"courses_avg":60}},{"IS":{"courses_id":"310"}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id"],"ORDER":{"dir":"DOWN","keys":["courses_avg"]}}},
+    "query13": {"WHERE":{"AND":[{"EQ":{"courses_audit":0}},{"GT":{"courses_avg":60}},{"IS":{"courses_dept":"cpsc"}},{"IS":{"courses_id":"310"}},{"IS":{"courses_uuid":"*1*"}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_uuid"],"ORDER":{"dir":"DOWN","keys":["courses_avg"]}}}
+}

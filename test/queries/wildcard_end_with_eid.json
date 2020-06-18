@@ -1,0 +1,196 @@
+{
+    "title": "SELECT * WHERE instructor=*eid ORDER BY instructor",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "*eid"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_instructor": "holmes, reid"
+        },
+        {
+            "courses_instructor": "holmes, reid"
+        },
+        {
+            "courses_instructor": "holmes, reid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        },
+        {
+            "courses_instructor": "o'brien, adelheid"
+        }
+    ]
+}

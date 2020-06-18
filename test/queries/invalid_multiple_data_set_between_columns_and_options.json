@@ -1,0 +1,27 @@
+{
+    "title": "Querying more than one dataset (in OPTIONS and WHERE)",
+    "query":
+    {
+        "WHERE": {
+            "AND": [
+                {"IS": {
+                    "cpsc_dept": "cpsc"
+                }
+                },
+                {
+                    "GT": {
+                        "cpsc_audit": 0.02e2
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

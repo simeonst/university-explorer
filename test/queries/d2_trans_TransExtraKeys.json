@@ -1,0 +1,29 @@
+{
+    "title": "TRANSFORMATIONS has extra keys",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 70
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg"    ]  },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ],
+            "SOMETHING": []
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Querying more than one dataset",
+    "query":
+    {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id", "cpsc_dept"
+            ], "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

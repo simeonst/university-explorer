@@ -1,0 +1,25 @@
+{
+    "title": "Simple max transformation",
+    "query": {
+        "WHERE": {
+            "LT": {"courses_avg": 40}
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title", "Minimum"],
+            "ORDER": "Minimum"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "Minimum": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"forest ecology","Minimum":0},{"courses_title":"in land food com","Minimum":0},{"courses_title":"prpty,ident&uses","Minimum":1},{"courses_title":"found re apprai","Minimum":4},{"courses_title":"sustnbt&frst ops","Minimum":4.5},{"courses_title":"engr econ anlys","Minimum":33},{"courses_title":"log & crit think","Minimum":33.2},{"courses_title":"hist 1500 - 20 c","Minimum":34},{"courses_title":"language & curr","Minimum":39.03}]}

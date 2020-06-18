@@ -1,0 +1,6 @@
+{
+    "title": "WHERE not object",
+    "query": { "WHERE": "sdjkasjd", "OPTIONS": {} },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

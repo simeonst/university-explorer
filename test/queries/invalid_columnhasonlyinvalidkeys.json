@@ -1,0 +1,9 @@
+{
+    "title": "Column has only invalid keys",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {"COLUMNS": [0, {}]}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,18 @@
+{
+    "title": "LT on valid key but incorrect value type",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": "56"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

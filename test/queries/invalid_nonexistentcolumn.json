@@ -1,0 +1,13 @@
+{
+    "title": "Querying existing dataset, but with a nonexistent column",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id", "courses_depth"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,306 @@
+{
+    "title": "Count the number of buildings at a particular latitude and return their max/min longitude values",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "numberOfBuildingsAtThisLongitude",
+                "maxLat",
+                "minLat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "numberOfBuildingsAtThisLongitude",
+                    "rooms_lon",
+                    "maxLat",
+                    "minLat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "maxLat": {
+                        "MAX": "rooms_lat"
+                    }
+                },
+                {
+                    "numberOfBuildingsAtThisLongitude": {
+                        "COUNT": "rooms_lat"
+                    }
+                },
+                {
+                    "minLat": {
+                        "MIN": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_lon": -123.24894,
+            "numberOfBuildingsAtThisLongitude": 2,
+            "maxLat": 49.2683,
+            "minLat": 49.26273
+        },
+        {
+            "rooms_lon": -123.24342,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26229,
+            "minLat": 49.26229
+        },
+        {
+            "rooms_lon": -123.24467,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26047,
+            "minLat": 49.26047
+        },
+        {
+            "rooms_lon": -123.24494,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26236,
+            "minLat": 49.26236
+        },
+        {
+            "rooms_lon": -123.24608,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26541,
+            "minLat": 49.26541
+        },
+        {
+            "rooms_lon": -123.2466,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2663,
+            "minLat": 49.2663
+        },
+        {
+            "rooms_lon": -123.24673,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26478,
+            "minLat": 49.26478
+        },
+        {
+            "rooms_lon": -123.24718,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26228,
+            "minLat": 49.26228
+        },
+        {
+            "rooms_lon": -123.24807,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26125,
+            "minLat": 49.26125
+        },
+        {
+            "rooms_lon": -123.24842,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2642,
+            "minLat": 49.2642
+        },
+        {
+            "rooms_lon": -123.24886,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26044,
+            "minLat": 49.26044
+        },
+        {
+            "rooms_lon": -123.24935,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26176,
+            "minLat": 49.26176
+        },
+        {
+            "rooms_lon": -123.24937,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26517,
+            "minLat": 49.26517
+        },
+        {
+            "rooms_lon": -123.24944,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26048,
+            "minLat": 49.26048
+        },
+        {
+            "rooms_lon": -123.24959,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26414,
+            "minLat": 49.26414
+        },
+        {
+            "rooms_lon": -123.25027,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26114,
+            "minLat": 49.26114
+        },
+        {
+            "rooms_lon": -123.25042,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.27106,
+            "minLat": 49.27106
+        },
+        {
+            "rooms_lon": -123.25099,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26372,
+            "minLat": 49.26372
+        },
+        {
+            "rooms_lon": -123.25165,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2661,
+            "minLat": 49.2661
+        },
+        {
+            "rooms_lon": -123.25179,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26176,
+            "minLat": 49.26176
+        },
+        {
+            "rooms_lon": -123.25198,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26228,
+            "minLat": 49.26228
+        },
+        {
+            "rooms_lon": -123.2521,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26766,
+            "minLat": 49.26766
+        },
+        {
+            "rooms_lon": -123.25224,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26274,
+            "minLat": 49.26274
+        },
+        {
+            "rooms_lon": -123.25237,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26862,
+            "minLat": 49.26862
+        },
+        {
+            "rooms_lon": -123.25249,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26479,
+            "minLat": 49.26479
+        },
+        {
+            "rooms_lon": -123.25308,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2659,
+            "minLat": 49.2659
+        },
+        {
+            "rooms_lon": -123.2531,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26398,
+            "minLat": 49.26398
+        },
+        {
+            "rooms_lon": -123.25314,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26207,
+            "minLat": 49.26207
+        },
+        {
+            "rooms_lon": -123.25318,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2699,
+            "minLat": 49.2699
+        },
+        {
+            "rooms_lon": -123.25364,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26486,
+            "minLat": 49.26486
+        },
+        {
+            "rooms_lon": -123.25374,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26627,
+            "minLat": 49.26627
+        },
+        {
+            "rooms_lon": -123.25431,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26293,
+            "minLat": 49.26293
+        },
+        {
+            "rooms_lon": -123.25468,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26826,
+            "minLat": 49.26826
+        },
+        {
+            "rooms_lon": -123.254816,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.266089,
+            "minLat": 49.266089
+        },
+        {
+            "rooms_lon": -123.25505,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2643,
+            "minLat": 49.2643
+        },
+        {
+            "rooms_lon": -123.25533,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26545,
+            "minLat": 49.26545
+        },
+        {
+            "rooms_lon": -123.255534,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.266463,
+            "minLat": 49.266463
+        },
+        {
+            "rooms_lon": -123.25583,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26767,
+            "minLat": 49.26767
+        },
+        {
+            "rooms_lon": -123.2559,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.264,
+            "minLat": 49.264
+        },
+        {
+            "rooms_lon": -123.25623,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26605,
+            "minLat": 49.26605
+        },
+        {
+            "rooms_lon": -123.25655,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.2666,
+            "minLat": 49.2666
+        },
+        {
+            "rooms_lon": -123.25692,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26867,
+            "minLat": 49.26867
+        },
+        {
+            "rooms_lon": -123.25741,
+            "numberOfBuildingsAtThisLongitude": 1,
+            "maxLat": 49.26958,
+            "minLat": 49.26958
+        }
+    ]
+}

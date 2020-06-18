@@ -1,0 +1,18 @@
+{
+    "title": "GT on invalid key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_id": 436
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

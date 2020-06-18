@@ -1,0 +1,22 @@
+{
+    "title": "Missing keys in ORDER in OPTIONS",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98.79
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "key": ["courses_avg"]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

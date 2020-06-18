@@ -1,0 +1,18 @@
+{
+    "title": "EQ on correct key but invalid value",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": "56"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
