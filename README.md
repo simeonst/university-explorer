@@ -6,7 +6,7 @@ Allows users to find data such as course averages, instructors, departments, pas
 
 ## Demo
 
-Here is a basic example of a query on the courses database. A computer science students wants to know which CPSC courses have an average less than 75%, as well as the corresponding instructor and year (presumably to know which courses to avoid  ).
+Here is a basic example of a query on the courses database. A computer science students wants to know which CPSC courses have an average less than 75%, as well as the corresponding instructor and year (presumably to know which courses to avoid 😅).
 
 Two conditions are specified, 6 columns to display, and the results are ordered by the average in ascending order.
 
@@ -18,7 +18,8 @@ In this case, the student wants to know data on the course itself (i.e. all cour
 
 ![Complex courses query](demo/complex-query-demo.gif)
 
-Additionally, rooms at UBC can be queried in the same manner. For completeness, the photo below displays parameters to be queried.
+Additionally, rooms at UBC can be queried in the same manner. 
+For completeness, the photo below displays parameters to be queried.
 
 ![Rooms query overview](demo/rooms.JPG)
 
