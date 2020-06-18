@@ -20,6 +20,7 @@ In this case, the student wants to know data on the course itself (i.e. all cour
 
 Additionally, rooms at UBC can be queried in the same manner. For completeness, the photo below displays parameters to be queried.
 
+![Rooms query overview](demo/rooms.JPG)
 
 
 
